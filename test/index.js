@@ -1,6 +1,6 @@
 const Lab = require('lab');
 const Code = require('code');
-const RandomPicker = require('../');
+const Pickme = require('../');
 
 // Test shortcuts
 
@@ -9,14 +9,14 @@ const describe = lab.describe;
 const it = lab.it;
 const expect = Code.expect;
 
-describe('RandomPicker', () => {
+describe('Pickme', () => {
 
   describe('Pick One', () => {
 
     describe('(with empty array of elements)', () => {
 
       it('should return null', (done) => {
-        expect(new RandomPicker().pickOne()).to.be.null();
+        expect(new Pickme().pickOne()).to.be.null();
         done();
       });
     });
@@ -26,7 +26,7 @@ describe('RandomPicker', () => {
       describe('(with one element)', () => {
 
         it('should return the element', (done) => {
-          expect(new RandomPicker(['a']).pickOne()).to.equal('a');
+          expect(new Pickme(['a']).pickOne()).to.equal('a');
           done();
         });
       });
@@ -35,7 +35,7 @@ describe('RandomPicker', () => {
 
         it('should return one of the elements', (done) => {
           const elements = ['a', 'b', 'c'];
-          expect(elements).to.include(new RandomPicker(elements).pickOne());
+          expect(elements).to.include(new Pickme(elements).pickOne());
           done();
         });
       });
@@ -45,7 +45,7 @@ describe('RandomPicker', () => {
         it('should return one of the elements', (done) => {
           const date = new Date().toISOString();
           const elements = ['a', 1, date];
-          expect(elements).to.include(new RandomPicker(elements).pickOne());
+          expect(elements).to.include(new Pickme(elements).pickOne());
           done();
         });
       });
@@ -54,7 +54,7 @@ describe('RandomPicker', () => {
 
         it('should return one of the elements', (done) => {
           const elements = [Symbol('a')];
-          const testFun = () => new RandomPicker(elements).pickOne();
+          const testFun = () => new Pickme(elements).pickOne();
           expect(testFun).to.throw(Error, 'Elements of type symbol are not supported, '
             + 'supported types are number, string, boolean');
           done();

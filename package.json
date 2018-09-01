@@ -1,5 +1,5 @@
 {
-  "name": "random-picker",
+  "name": "pickme",
   "version": "1.0.0",
   "description": "A library to randomly pick up an element from a list passed by the user",
   "main": "index.js",
