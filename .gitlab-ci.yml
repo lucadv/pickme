@@ -1,0 +1,28 @@
+image: lucadv/gitlabci-node6-lambda:latest 
+
+# Cache modules in between jobs
+cache:
+  key: ${CI_COMMIT_SHA}
+  paths:
+    - node_modules/
+
+before_script:
+  - make prepare
+
+stages:
+  - Unit Tests
+  - Lint
+
+test:
+  stage: Unit Tests
+  script:
+    - make cov
+  tags:
+    - gitlab-ci
+  
+lint:
+  stage: Lint
+  script: 
+    - make lint
+  tags:
+    - gitlab-ci
