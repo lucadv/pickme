@@ -17,12 +17,9 @@ test:
   stage: Unit Tests
   script:
     - make cov
-  tags:
-    - gitlab-ci
   
 lint:
   stage: Lint
   script: 
     - make lint
-  tags:
-    - gitlab-ci
+
