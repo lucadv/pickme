@@ -5,6 +5,6 @@ A module that, given a list of elements, randomly pick up one and return it. The
 ## Usage
 
 ```javascript
-const Pickme = require('random-picker');
+const Pickme = require('@lucadv/pickme');
 const picked = new Pickme(['a', 'b', 'c']).pickOne(); // will be one of a, b or c
 ```
