@@ -1,5 +1,5 @@
 {
-  "name": "pickme",
+  "name": "@lucadv/pickme",
   "version": "1.0.0",
   "description": "A library to randomly pick up an element from a list passed by the user",
   "main": "index.js",
@@ -19,5 +19,26 @@
     "eslint-plugin-react": "^7.11.1",
     "lab": "^11.2.1"
   },
-  "author": "Luca Di Vincenzo <ldivincenzo@gmail.com>"
+  "author": "Luca Di Vincenzo <ldivincenzo@gmail.com>",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucadv/pickme.git"
+  },
+  "keywords": [
+    "random",
+    "picker",
+    "pick"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucadv/pickme/issues"
+  },
+  "homepage": "https://github.com/lucadv/pickme#readme"
 }
