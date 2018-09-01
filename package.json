@@ -1,0 +1,23 @@
+{
+  "name": "random-picker",
+  "version": "1.0.0",
+  "description": "A library to randomly pick up an element from a list passed by the user",
+  "main": "index.js",
+  "engines": {
+    "node": "8.10.x"
+  },
+  "dependencies": {
+    "hoek": "^4.1.0"
+  },
+  "devDependencies": {
+    "code": "^5.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "lab": "^11.2.1"
+  },
+  "author": "Luca Di Vincenzo <ldivincenzo@gmail.com>"
+}
