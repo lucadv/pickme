@@ -6,9 +6,6 @@
   "engines": {
     "node": "8.10.x"
   },
-  "dependencies": {
-    "hoek": "^4.1.0"
-  },
   "devDependencies": {
     "code": "^5.0.0",
     "eslint": "^5.5.0",
